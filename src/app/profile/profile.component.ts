@@ -74,7 +74,7 @@ export class ProfileComponent implements OnInit {
   show = (item): void => {
     if (item.target.value !== '') {
       this.has_value = true;
-      this.name$.next(item.target.value);
+      this.name$.next((item.target.value).toLowerCase());
     } else {
       this.has_value = false;
     }

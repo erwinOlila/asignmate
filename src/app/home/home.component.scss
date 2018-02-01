@@ -17,11 +17,16 @@ mat-card-content {
     margin: auto;
 }
 
+.spacer {
+    min-height: 40px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
     width: 350px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     grid-gap: 1em;
 }
 
@@ -51,6 +56,7 @@ button {
 button:hover {
     background-color: rgb(97, 7, 136);
 }
+
 
 .mission {
     background-color: rgb(97, 7, 136);
