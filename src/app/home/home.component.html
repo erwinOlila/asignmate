@@ -1,0 +1,17 @@
+<mat-card class="about">
+  <mat-card-content>
+    <div class="grid-container">
+        <mat-icon>supervisor_account</mat-icon>
+        <p>Assignmate is an app where people around the world collaborate.</p>
+    </div>
+    <br><br>
+    <div class="grid-container">
+        <mat-icon>touch_app</mat-icon>
+        <p>With Assignmate, users get to express their concerns to thousands of agents around the world and get fulfilled.</p>
+    </div>
+    <br><br><br>
+    <strong>SEEK. HELP. COLLABORATE!</strong>
+    <br><br>
+    <a *ngIf="!auth.isLoggedIn" routerLink='login'><button mat-raised-button> See it in action</button></a> 
+  </mat-card-content>
+</mat-card>

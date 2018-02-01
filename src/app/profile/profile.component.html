@@ -1,0 +1,68 @@
+<div *ngIf="(profile | async) as profile; else loading">
+    <div  id="details">
+        <img [src]="profile.photoURL" alt="">
+        <div id="context">
+            <p><span class="section">respects:</span>    {{ profile.respects}}</p>
+            <p><span class="section">email:</span>       {{ profile.email}}</p>
+            <p><span class="section">address:</span>     {{ profile.address}}</p>
+            <p><span class="section">profession:</span>  {{ profile.profession}}</p>
+            <p><span class="section">date joined:</span> {{ profile.join}}</p>
+        </div>
+    </div>
+    <div id="assignment-section">
+        <div id="agents-section">
+            <form [formGroup]="agents">
+                <mat-form-field>
+                    <input matInput placeholder="Search agents for help" (keyup)="show($event)" (keydown)="show($event)" formControlName="agent" type="text">
+                    <mat-hint>Ex. erwin, batman, euvgeny</mat-hint>
+                </mat-form-field>
+            </form>
+            <div id="agents-container" *ngIf="has_value">
+                <ul *ngIf="(items$ | async) as items">
+                    <li *ngFor="let item of items">
+                        <app-agent-cards
+                        *ngIf="item.id !== profile.id"
+                        [user_id]="profile.id"
+                        [id]="item.id"
+                        [photo]="item.photoURL" 
+                        [name]="item.displayName"
+                        [email]="item.email"
+                        [profession]="item.profession"
+                        [online]="item.online"
+                        [respects]="item.respects"></app-agent-cards>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <mat-tab-group (selectChange)="toggle($event)" [selectedIndex]="0">
+            <mat-tab label="My Tasks">
+                    <div *ngFor="let concern$ of concerns$">
+                        <div *ngIf="(concern$ | async) as concern">
+                            <app-concerns 
+                            [id]="concern.sender"
+                            [subject]="concern.subject"
+                            [body]="concern.body"
+                            [status]="concern.status"></app-concerns>
+                        </div>
+                    </div>
+            </mat-tab>
+            <mat-tab label="Submissions">
+                <div *ngFor="let concern$ of concerns$">
+                    <div *ngIf="(concern$ | async) as concern">
+                        <app-concerns 
+                        [id]="concern.receiver"
+                        [subject]="concern.subject"
+                        [body]="concern.body"
+                        [status]="concern.status"></app-concerns>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>
+<ng-template #loading>
+        Loading user data...
+</ng-template>
+
+
+

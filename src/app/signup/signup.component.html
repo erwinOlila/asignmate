@@ -1,0 +1,40 @@
+<form (keyup)="checkForm()" [formGroup]="user_details" (ngSubmit)="onSubmit()">
+    <mat-form-field class="left first">
+        <input matInput placeholder="First Name" formControlName="first"  type="text" required>
+    </mat-form-field>
+
+    <mat-form-field class="right last">
+        <input matInput placeholder="Last Name" formControlName="last" type="text" required>
+    </mat-form-field>
+
+    <mat-form-field class="left email">
+        <input matInput placeholder="Email address" formControlName="email" type="email" required>
+    </mat-form-field>
+
+    <mat-form-field class="right password">
+        <input matInput placeholder="Password" formControlName="password" type="password" required>
+    </mat-form-field>
+
+    <mat-form-field class="left birthdate">
+            <input matInput [matDatepicker]="picker" placeholder="Birthdate" formControlName="birth" type="date" required>
+            <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="right password">
+        <input matInput placeholder="Confirm Password" formControlName="password_conf" type="password" required>
+        <mat-hint>{{ password_match_message }}</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="whole profession">
+        <input matInput placeholder="Profession" formControlName="profession">
+    </mat-form-field>
+    
+    <mat-form-field class="whole address">
+        <input matInput placeholder="Address" formControlName="address">
+    </mat-form-field>
+
+    <div *ngIf="error" id="status">
+        <p class="error">{{ error_message }}</p>
+    </div>
+    <button id="button" mat-raised-button color="primary" type="submit">Sign Up</button>
+</form>

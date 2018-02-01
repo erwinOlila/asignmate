@@ -1,0 +1,61 @@
+
+.about {
+    background-color: rgb(97, 7, 136);
+    height: 400px;
+}
+
+mat-card-content {
+    margin-top: 50px !important;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+ p {
+    color: white;
+    font-size: 13px;
+    width: 300px;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    width: 350px;
+    margin: auto;
+    grid-gap: 1em;
+}
+
+.grid-container > p {
+    font-family: 'Rokkitt', serif;
+}
+
+mat-icon {
+    font-size: 300%;
+    color: beige;
+}
+
+strong {
+    color: beige;
+    margin: auto;
+}
+
+a {
+    margin: auto;
+}
+
+button {
+    background-color: red; 
+    color: beige;
+}
+
+button:hover {
+    background-color: rgb(97, 7, 136);
+}
+
+.mission {
+    background-color: rgb(97, 7, 136);
+}
+
+.vision {
+    background-color: darkslategrey;
+}

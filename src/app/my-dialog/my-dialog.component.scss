@@ -1,0 +1,28 @@
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h4 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+mat-dialog-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100% !important;
+}
+
+mat-form-field {
+    width: 100% !important;
+}
+
+textarea {
+    height: 150px !important;
+}
+
+mat-dialog-actions {
+    margin: auto;
+}
+

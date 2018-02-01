@@ -1,0 +1,62 @@
+#details {
+    border-top: 2px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 10px;
+    grid-gap: 10px;
+    background-color: rgb(97, 7, 136);
+}
+
+#details > img {
+    width: 130px;
+    margin: auto;
+}
+
+
+#context {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#context > p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: azure;
+}
+
+.section {
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+}
+
+#agents-section {
+    width: 220px;
+    display: grid;
+    padding: 10px;
+}
+
+#agents-section > form {
+    margin: auto;
+    position: absolute;
+    margin-left: 20px;
+}
+
+#agents-container > ul {
+    margin-top: 50px;
+}
+
+app-agent-cards {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#assignment-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+mat-tab-group {
+    padding: 10px;
+}

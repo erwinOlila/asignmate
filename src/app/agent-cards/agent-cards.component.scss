@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+#whole {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid #ccc;
+    padding: 10px;
+    grid-column-gap: 12px;
+}
+
+#avatar {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+#avatar > img {
+    margin: auto;
+    width: 50px;
+}
+
+#avatar > p {
+    text-align: center;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+#details > p {
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+
+#submit-concern {
+    cursor: pointer;
+}
+

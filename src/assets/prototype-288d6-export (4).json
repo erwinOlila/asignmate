@@ -1,0 +1,184 @@
+{
+  "concerns" : {
+    "-L3lpofo1Gi4flNbShQP" : {
+      "body" : "Hi Flash, from erwin",
+      "date" : 1516959637080,
+      "receiver" : "456ert",
+      "sender" : "9VOgwjuK7JdvYW0H2qOfgkX9RJn2",
+      "status" : 0,
+      "subject" : "testing"
+    },
+    "-L3mKtPVV3f-jmeFacN6" : {
+      "body" : "Fishes are suffocated in Manila Bay",
+      "date" : 1516968023773,
+      "receiver" : "123zxc",
+      "sender" : "9VOgwjuK7JdvYW0H2qOfgkX9RJn2",
+      "status" : 0,
+      "subject" : "water pollution"
+    },
+    "-L3pStIrrpgVlYDMTcvT" : {
+      "body" : "get the mother box",
+      "date" : 1517020475720,
+      "receiver" : "123asd",
+      "sender" : "9VOgwjuK7JdvYW0H2qOfgkX9RJn2",
+      "status" : 0,
+      "subject" : "motherbox"
+    },
+    "-L3qwOGADxkB73qiFt-K" : {
+      "body" : "help help",
+      "date" : 1517045246671,
+      "receiver" : "123qwe",
+      "sender" : "9VOgwjuK7JdvYW0H2qOfgkX9RJn2",
+      "status" : 0,
+      "subject" : "help"
+    },
+    "-L3rlXXj30Yd7K-5MvcC" : {
+      "body" : "whatever",
+      "date" : 1517059127670,
+      "receiver" : "890iop",
+      "sender" : "9VOgwjuK7JdvYW0H2qOfgkX9RJn2",
+      "status" : 0,
+      "subject" : "hi"
+    }
+  },
+  "users" : {
+    "123asd" : {
+      "address" : "venus",
+      "displayName" : "wonderman",
+      "email" : "wonderman@gmail.com",
+      "id" : "123asd",
+      "join" : "Wed, 24 Jan 2018 13:59:08 GMT",
+      "online" : true,
+      "photoURL" : "https://orig00.deviantart.net/c535/f/2011/202/0/3/wonder_woman_icon_by_jeremymallin-d417pgk.png",
+      "profession" : "Superhero",
+      "subName": "wonderwoman",
+      "receives" : {
+        "-L3pStIrrpgVlYDMTcvT" : true
+      },
+      "respects" : 31
+    },
+    "123qwe" : {
+      "address" : "mars",
+      "displayName" : "superman",
+      "email" : "superman@gmail.com",
+      "id" : "123qwe",
+      "join" : "Wed, 24 Jan 2018 13:59:08 GMT",
+      "online" : true,
+      "photoURL" : "https://www.svgimages.com/svg-image/s10/superman-s-logo-256x256.png",
+      "profession" : "Superhero",
+      "subName": "superman",
+      "respects" : 5
+    },
+    "123zxc" : {
+      "address" : "neptune",
+      "displayName" : "aquaman",
+      "email" : "aquaman@gmail.com",
+      "id" : "123zxc",
+      "join" : "Wed, 24 Jan 2018 13:59:08 GMT",
+      "online" : true,
+      "photoURL" : "https://www.shareicon.net/data/256x256/2015/08/29/92937_super_400x400.png",
+      "profession" : "Superhero",
+      "subName": "aquaman",
+      "receives" : {
+        "-L3mKtPVV3f-jmeFacN6" : true
+      },
+      "respects" : 35
+    },
+    "345ert" : {
+      "address" : "earth",
+      "displayName" : "batman",
+      "email" : "batman@gmail.com",
+      "id" : "345ert",
+      "join" : "Wed, 24 Jan 2018 13:59:08 GMT",
+      "online" : true,
+      "photoURL" : "http://icons.iconarchive.com/icons/iconshock/batman/256/Logo-icon.png",
+      "profession" : "Superhero",
+      "subName": "batman",
+      "respects" : 155
+    },
+    "456ert" : {
+      "address" : "saturn",
+      "displayName" : "theflash",
+      "email" : "theflash@gmail.com",
+      "id" : "456ert",
+      "join" : "Wed, 24 Jan 2018 13:59:08 GMT",
+      "online" : true,
+      "photoURL" : "https://3.bp.blogspot.com/-Y1dqoxpuwoI/Vb5dBf0ZSpI/AAAAAAAAO4I/G6nReSMzCN0/s1600/flash_logo_icon_by_mahesh69a-d47j7bv.png",
+      "profession" : "Superhero",
+      "subName": "theflash",
+      "receives" : {
+        "-L3lpofo1Gi4flNbShQP" : true
+      },
+      "respects" : 16
+    },
+    "890iop" : {
+      "address" : "mercury",
+      "displayName" : "batgirl",
+      "email" : "batgirln@gmail.com",
+      "id" : "890iop",
+      "join" : "Sat, 27 Jan 2018 13:59:08 GMT",
+      "online" : true,
+      "photoURL" : "https://orig00.deviantart.net/fb41/f/2011/202/6/7/batgirl_icon_2_by_jeremymallin-d417ojs.png",
+      "profession" : "Superhero",
+      "subName": "batgirl",
+      "receives" : {
+        "-L3pStIrrpgVlYDMTcvT" : true,
+        "-L3rlXXj30Yd7K-5MvcC" : true
+      },
+      "respects" : 31
+    },
+    "9VOgwjuK7JdvYW0H2qOfgkX9RJn2" : {
+      "address" : "ML Quezon Street, Maguikay Mandaue City, Cebu, Philippines, 6014",
+      "displayName" : "erwin cabatingan",
+      "email" : "ce.olila@gmail.com",
+      "id" : "9VOgwjuK7JdvYW0H2qOfgkX9RJn2",
+      "join" : "Fri, 26 Jan 2018 05:17:01 GMT",
+      "online" : false,
+      "photoURL" : "http://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg",
+      "profession" : "Electrical Engineer",
+      "subName": "erwin cabatingan",
+      "receives" : {
+        "-L3ugusJ0ow4UauhbCk4" : true
+      },
+      "respects" : 3,
+      "submits" : {
+        "-L3lpofo1Gi4flNbShQP" : true,
+        "-L3mKtPVV3f-jmeFacN6" : true,
+        "-L3pStIrrpgVlYDMTcvT" : true,
+        "-L3qwOGADxkB73qiFt-K" : true,
+        "-L3rlXXj30Yd7K-5MvcC" : true,
+        "-L3uvrlsDP7tI0ep9Lnw" : true
+      }
+    },
+    "exYv9xievBhC0QqSO5RhszyzFNj1" : {
+      "address" : "Milky Way",
+      "displayName" : "Test Account",
+      "email" : "ce.greenbeans@gmail.com",
+      "id" : "exYv9xievBhC0QqSO5RhszyzFNj1",
+      "join" : "Sun, 28 Jan 2018 02:57:47 GMT",
+      "online" : false,
+      "photoURL" : "http://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg",
+      "profession" : "Spy",
+      "subName": "test account",
+      "receives" : {
+        "-L3uvrlsDP7tI0ep9Lnw" : true
+      },
+      "respects" : 0,
+      "submits" : {
+        "-L3ugusJ0ow4UauhbCk4" : true
+      }
+    },
+    "pdXn8SYqc2ekCr8U8IBet9pkf263" : {
+      "address" : "Cassini",
+      "displayName" : "Test Account",
+      "email" : "ce.greenbeans@gmail.com",
+      "id" : "pdXn8SYqc2ekCr8U8IBet9pkf263",
+      "join" : "Wed, 31 Jan 2018 11:23:02 GMT",
+      "online" : true,
+      "photoURL" : "http://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg",
+      "profession" : "Tester",
+      "respects" : 0,
+      "subName" : "test account"
+    }
+  }
+}

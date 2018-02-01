@@ -1,0 +1,42 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+    min-height: 17px !important;
+    padding: 0;
+    margin: 0;
+}
+
+mat-toolbar-row {
+    height: 40px !important;
+    background: rgba(255, 0, 0, 0.7);
+}
+
+#title {
+    font-size: 15px;
+}
+
+h5 > strong {
+    font-family: 'Rokkitt', serif;
+}
+
+.toolbar-text {
+    font-size: 12px;
+}
+
+.greet {
+    font-size: 12px;
+}
+
+#name-tag {
+    display: flex;
+    padding: 5px;
+}
+
+#name-tag > img {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+<mat-card *ngIf="(card$ | async) as card">
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <img [src]="card.photoURL" alt="">
+      <p>{{ card.displayName }}</p>
+      <span id="spacer"></span>
+      <p id="status"> {{ status }} </p>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-card-header>
+    <p> {{ subject }} </p>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ body }}</p>
+  </mat-card-content>
+</mat-card>
+
+<!-- <div >
+  <p>{{ card.displayName }}</p>
+  <p>{{subject}}</p>
+  <p>{{status}}</p>
+  <p>{{body}}</p>
+</div> -->

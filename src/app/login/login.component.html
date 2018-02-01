@@ -1,0 +1,27 @@
+<form [formGroup]="login_details" (ngSubmit)="login()">
+    <mat-icon>lock_outline</mat-icon>
+    <mat-form-field class="email">
+        <input matInput placeholder="Email" formControlName="email"  type="email">
+    </mat-form-field>
+
+    <mat-form-field class="password">
+        <input matInput placeholder="Password" formControlName="password"  type="password">
+    </mat-form-field>
+    
+    <button mat-raised-button color="primary" type="submit">Login</button>
+    <a><button mat-raised-button color="accent" (click)="redirect()" >Sign In</button></a> 
+    <div class="grid-column-whole" *ngIf="auth.error" id="status">
+      <p class="error">{{ auth.error }}</p>
+    </div>
+    <div class="grid-column-whole" id="verify-container" *ngIf="!auth.isVerified && auth.isLoggedIn && !auth.sentVerify">
+        <p class="error">
+            Please verify your email to proceed. To receive a verification email, click the <span (click)="auth.verify()" id="verify">verify</span> link
+        </p>  
+    </div>
+    <div class="grid-column-whole" id="verify-container" *ngIf="!auth.isVerified && auth.isLoggedIn && auth.sentVerify">
+        <p class="error">
+            Verification email sent. Refresh this page after the confirmation.
+        </p>  
+    </div>
+</form>
+

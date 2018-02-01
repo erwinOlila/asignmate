@@ -1,0 +1,20 @@
+<div id="whole">
+    <div id="avatar">
+      <img [src]="photo" alt="">
+      <p><strong>{{ name }}</strong></p>
+    </div>
+    <div id="details">
+      <p>{{ respects }} respects</p>
+      <p> {{ email }}</p>
+      <p> {{ profession }}</p>
+      <div id="buttons">
+        
+        <span matTooltip="Online"  *ngIf="online"><mat-icon style="color: green">lightbulb_outline</mat-icon></span>
+        <span matTooltip="Offline" *ngIf="!online"><mat-icon  style="color: red">lightbulb_outline</mat-icon></span>
+        <mat-icon style="color: rgb(0, 153, 255)">thumb_up</mat-icon>
+        <span matTooltip="Submit Request"><mat-icon id="submit-concern" (click)="open_dialog()" style="color: rgb(255, 0, 191)">plus_one</mat-icon></span>
+        
+      </div>
+    </div>
+  </div>
+  
