@@ -48,12 +48,8 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     if (this.auth.currentUser !== null) {
-      console.log('LOGGED IN!!!');
-      console.log(this.auth.currentUser);
       this.loadProfile();
     } else {
-      console.log('LOGGED OUT');
-      console.log(this.auth.currentUser);
     }
     this.getKeys('/receives');
   }
@@ -82,7 +78,6 @@ export class ProfileComponent implements OnInit {
 
   getKeys = (node: string): void => {
     this.concerns$ = [];
-    console.log('getting keys ...');
     const id:   string = this.auth.currentUser.uid;
     const path: string = 'users/' + id + node;
     const keys: Observable<any[]> = this.db.getUserList(path).snapshotChanges();
@@ -95,14 +90,11 @@ export class ProfileComponent implements OnInit {
   }
 
   getConcerns = (key: string): Observable<any> => {
-    console.log('HELLO');
     const concern: Observable<any> =  this.db.afDb.object('concerns/' + key).valueChanges();
-    console.log(concern);
     return concern;
   }
 
   getSubmits = (): void => {
-    console.log('Submits');
   }
 
   toggle = (event): void => {

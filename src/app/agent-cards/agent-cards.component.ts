@@ -35,7 +35,6 @@ export class AgentCardsComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog closed: ${result}`);
      this.dialogResult = result;
     });
   }
